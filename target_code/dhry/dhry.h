@@ -392,6 +392,10 @@
 #define true  1
 #define false 0
 
+#ifndef ENABLE_PRINTFS
+#define printf(...) ((void)0)
+#endif
+
 typedef int     One_Thirty;
 typedef int     One_Fifty;
 typedef char    Capital_Letter;
